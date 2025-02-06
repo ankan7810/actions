@@ -1,11 +1,11 @@
 name: Deploy Dist
 # on: [push,workflow_dispatch] # "workflow_dispatch" is a githubactions event.
 on:
-    push:
-        branches:
+    push: #this is the same thing which is in above line. 
+        branches: #if we push only in "main" branche then workflow trigger.
             - main
             - 'feature/**'
-        paths-ignore:
+        paths-ignore: # if changes in mantion path then don't trigger workflow.
             - '.github/workflows/*'  
             - README.md  
     workflow_dispatch:        
