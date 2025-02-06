@@ -4,7 +4,7 @@ on:
     branches:
       - main
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened] # this called activity (only pull req we add activity)
 jobs:
   sonarcloud:
     name: SonarCloud
